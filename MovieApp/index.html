@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <h1>Movie App</h1>
+            </div>
+            <nav class="navigation">
+                <button class="category-button" data-category="popular">Popular</button>
+                <button class="category-button" data-category="now_playing">Now Playing</button>
+                <button class="category-button" data-category="top_rated">Top Rated</button>
+            </nav>
+            <div class="search-favorites">
+                <div class="search-input-wrapper">
+                    <input type="text" id="search-input" placeholder="Search for movies..." />
+                    <button id="clear-button">✕</button>
+                    <div id="suggestions"></div>
+                </div>
+                <button id="search-button">Search</button>
+                <button id="watchlist-button" class="favorite-button">Watchlist</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="movies-grid"></div>
+            <button id="load-more-button" class="load-more-button">Load More</button>
+        </div>
+    </main>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
