@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container container">
+            <h1 id="logo">Recipe App</h1>
+            <nav>
+                <ul>
+                    <li><button class="category-button" data-category="low-calorie">Low Calorie</button></li>
+                    <li><button class="category-button" data-category="meat">Meat Dishes</button></li>
+                    <li><button class="category-button" data-category="vegan">Vegan</button></li>
+                </ul>
+            </nav>
+            <div class="search-favorites">
+                <div class="search-input-wrapper">
+                    <input type="text" id="searchInput" placeholder="Search recipes...">
+                    <button id="clearButton">&times;</button>
+                    <div id="suggestions"></div>
+                </div>
+                <button id="searchButton">Search</button>
+                <button id="favoritesButton" class="favorite-button">Favorites</button>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div id="recipesContainer"></div>
+        <button id="loadMoreButton" class="load-more-button">Load More</button>
+    </main>
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="recipeDetails"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
